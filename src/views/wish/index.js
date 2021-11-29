@@ -9,6 +9,7 @@ import Section2 from './section2';
 import Thankyou from './thankyou';
 
 
+
 const Wish = () => {
 
   const [showMain, setshowMain] = useState(false);
@@ -19,11 +20,11 @@ const Wish = () => {
       {
         showMain && <React.Fragment>
           {!isMobile() && <AboutHer />}
-         {isMobile() ? <Video /> : <Section2 />}
-         {
-           isMobile() ? <Spotify />  :  <Cutental  />
-         }
-      <Thankyou />
+          {isMobile() ? <Video /> : <Section2 />}
+          {
+            isMobile() ? <Spotify /> : <Cutental />
+          }
+          <Thankyou />
 
         </React.Fragment>
       }

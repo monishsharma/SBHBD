@@ -3,7 +3,7 @@ import Bumble2 from "../../images/her/bumble2.jpg"
 import her1 from "../../images/her/Screenshot 2021-10-23 at 11.22.35 PM.png"
 import her2 from "../../images/her/Screenshot 2021-10-23 at 11.21.50 PM.png";
 import her3 from "../../images/her/Screenshot 2021-10-23 at 11.22.07 PM.png";
-import her4 from "../../images/her/Screenshot 2021-10-23 at 11.23.00 PM.png";
+import her4 from "../../images/her/fav.png";
 
 
 
