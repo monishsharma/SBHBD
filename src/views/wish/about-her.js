@@ -8,7 +8,7 @@ import Bumble from "../../images/her/bumble.jpg"
 import isMobile from "../../helper/is-mobile";
 import like from "../../images/red-heart.png";
 import comment from "../../images/instagram-comment.png";
-import avatr from "../../images/her/Screenshot 2021-10-23 at 11.22.35 PM.png"
+import avatr from "../../images/her/Screenshot 2021-10-23 at 11.22.35 PM.jpg"
 
 function AboutHer() {
 
