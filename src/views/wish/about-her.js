@@ -6,7 +6,9 @@ import { InView } from 'react-intersection-observer';
 import iphone from "../../images/iphone.png";
 import Bumble from "../../images/her/bumble.jpg"
 import isMobile from "../../helper/is-mobile";
-
+import like from "../../images/red-heart.png";
+import comment from "../../images/instagram-comment.png";
+import avatr from "../../images/her/Screenshot 2021-10-23 at 11.22.35 PM.png"
 
 function AboutHer() {
 
@@ -33,10 +35,32 @@ function AboutHer() {
             triggerElement={".about-title"}
           >
             <div className="about-title">
-              <div className="img-container">
-                <img className="phone" src={iphone} alt="mobile" />
-                <img className="herImages" src={img} alt="mobile" />
+              <div className="instapost">
+                <div className="instaheader">
+                  <div className="headerContent">
+                    <div className="parent">
+                      <div className="avatar">
+                        <img src = {avatr} alt ="Avatar" />
+                        <p>shutthefucccup</p>
+                      </div>
+                      <p style={{fontSize:'20px', fontWeight: "bolder" }}>.....</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="instapost1">
+                  <img src={img} />
+                </div>
+                <div className="instafooter">
+                  <div className="intract">
+                    <img src={like} />
+                    <img src={comment} />
+                  </div>
+                </div>
               </div>
+              {/* <div className="img-container"> */}
+                {/* <img className="phone" src={iphone} alt="mobile" />
+                <img className="herImages" src={img} alt="mobile" /> */}
+              {/* </div> */}
             </div>
           </Scene>
         </Controller>
