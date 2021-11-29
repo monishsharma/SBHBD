@@ -1,0 +1,135 @@
+.section{
+    margin-bottom: 64px;
+}
+.questionWrap{
+    width: 400px;
+}
+.margin li:not(:last-child){
+    margin-bottom: 16px;
+}
+.questionHeading{
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #465166;
+}
+.questionHeading>span{
+    color: rgba(70, 81, 102, 0.6);
+}
+.ownerNumber, .damagedTpye{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    flex-wrap: wrap;
+    grid-gap: 16px 16px;
+    width: 100%;
+}
+.lookType{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    grid-gap: 16px 16px;
+}
+.tyreCondition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.meterImage{
+    margin-bottom: 8px;
+    width: 390px;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 10px 10px;
+}
+.meterImage>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.messageStrip{
+    margin-bottom: 36px;
+    padding: 6px 10px;
+    background: rgba(0, 113, 188, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.messageStrip>img{
+    margin-right: 8px;
+}
+.content{
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #172B4D;
+}
+.buttonWrap{
+    margin-top: 64px;
+    width: 288px;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 0px 30px;
+    font-size: large;
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient(261deg, #f69b00, #ed6a00);
+    border: none;
+    outline: none;
+    height: 48px;
+    padding: 0 .75rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(237, 108, 13, 0.5);
+    margin-top: 50px;
+
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  background-image: none;
+  color: #666666;
+  border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(65, 65, 65, 0.5);
+}
+
+.checkboxHolder{
+    display: inline-block;
+}
+input[type="checkbox"] {
+    display: none
+}
+.checkboxHolder label {
+    cursor: pointer;
+    top: 3px;
+    position: relative;
+}
+input[type="checkbox"] + label:before,
+input[type="checkbox"]:checked + label:before {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 8px;
+    position: relative;
+    padding: 0;
+    content: "";
+    display: inline-block;
+    top: 2px;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid #ed6a00;
+}
+input[type="checkbox"]:checked + label:before {
+    background: #ed6a00;
+    border-color: transparent;
+    background-size: 12px;
+}
+input[type="checkbox"]:focus + label::before {
+    outline: transparent;
+}

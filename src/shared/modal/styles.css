@@ -1,0 +1,378 @@
+:global .overlayClass, :global .inspectionReportDetail, :global .juspayModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+:global .alreadyBookingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(70, 81, 102, 0.3);
+    backdrop-filter: blur(40px);
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+:global .bookingOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity .23s ease-in;
+    transition: opacity .23s ease-in;
+}
+
+:global .customerInputsModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+:global .onScreenFilterAe{
+    position: fixed;
+    top: 118px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: opacity .23s ease-in;
+    transition: opacity .23s ease-in;
+}
+:global .ReactModal__Overlay--before-close.customerInputsModal,
+:global .ReactModal__Overlay--after-open.bookingOverlay{
+    opacity: 1;
+}
+:global .ReactModal__Overlay--before-close.customerInputsModal,
+:global .ReactModal__Overlay--before-close.bookingOverlay,
+:global .ReactModal__Overlay--before-close.onScreenFilterAe,
+:global .ReactModal__Overlay--before-close.inspectionReportDetail{
+    opacity: 0;
+}
+:global .ReactModal__Overlay--after-open.customerInputsModal,
+:global .ReactModal__Overlay--after-open.bookingOverlay,
+:global .ReactModal__Overlay--after-open.onScreenFilterAe{
+    opacity: 1;
+}
+:global .ReactModal__Overlay--before-close.customerInputsModal,
+:global .ReactModal__Overlay--before-close.bookingOverlay,
+:global .ReactModal__Overlay--before-close.onScreenFilterAe{
+    opacity: 0;
+}
+:global .bookingModal{
+    width: 610px;
+    height: 75vh;
+    padding: 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    color: #465166;
+    display: block;
+    margin: 120px 0 0 51%;
+    -webkit-transition: all .2s cubic-bezier(0, 0.89, 0, 0.93);
+    transition: all .2s cubic-bezier(0, 0.89, 0, 0.93);
+    overflow-y: auto;
+}
+
+:global .bookingModal > div > div>div{
+    margin: 0px;
+    position: relative;
+    border-radius: 0px;
+}
+
+:global .height300 {
+    height: 367px;
+    padding: 14px 0px;
+    overflow: hidden;
+    /* width: 344px; */
+    /* margin: 190px 0 0 60%; */
+
+}
+:global .KnowHow{
+    width: 600px;
+    max-height: 80%;
+    margin: 94px auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+:global .branchOverlay{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    opacity: 1;
+    -webkit-transition: opacity .23s ease-in;
+    transition: opacity .23s ease-in;
+    display: flex;
+    align-items: center;
+}
+:global .branchContent{
+    width: 610px;
+    padding: 15px 0px 0px 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    color: #465166;
+    display: block;
+    margin: 0px auto 0;
+    -webkit-transition: all .2s cubic-bezier(0, 0.89, 0, 0.93);
+    transition: all .2s cubic-bezier(0, 0.89, 0, 0.93);
+}
+:global .reactCropOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 9999;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+}
+:global .reactCrop{
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+    /* background-color: #000; */
+    color: #465166;
+    display: block;
+    -webkit-transition: all .2s cubic-bezier(0, 0.89, 0, 0.93);
+    transition: all .2s cubic-bezier(0, 0.89, 0, 0.93);
+    padding-bottom: 10px;
+    align-self: center;
+}
+:global .reactCrop img{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;  
+}
+:global .reactCrop button{
+    width: 180px;
+    margin: 10px auto;
+}
+:global .tupleOverlay,
+:global .tupleContent{ 
+    position: absolute;
+    width: 100%;
+}
+:global .tupleOverlay{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+:global .tupleContent{ 
+    bottom: 0px;
+    background: #fff;
+    min-height: 169px;
+    box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.07);
+}
+:global .branchOTP > div:first-child{
+ position: relative !important;
+ background: #fff;
+}
+:global .branchOTP > div:first-child > div:first-child{
+    margin: 0px;
+    border-radius: 0px;
+}
+:global .drsLoader{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+:global .otpModal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+:global .bikeModal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+:global .congratualtionModel{
+    width: calc(100% - 64px);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 89, 163, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 89, 163, 0.1);
+    background-color: #ffffff;
+    left: 32px;
+    right: 32px;
+    position: fixed;
+    top: 17%;
+    padding-bottom: 30px;
+}
+
+:global .buycarBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+      
+}
+:global .otpModal>div{
+    position: relative;
+    width: 365px;
+}
+@media screen and (max-width: 600px){
+    :global .KnowHow{
+        width: 100%;
+        min-height: 100vh;
+        margin: 0px auto;
+        border-radius: 0px;
+        background-color: #ffffff;
+    }
+    :global .reactCrop{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    :global .reactCrop img{
+        width: 100%; 
+    }
+    :global .bookingWrapMobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        overflow: scroll;
+        height: calc(100vh - 15%);
+    }
+    :global .otpModal>div{
+        position: relative;
+        width: 350px;
+    }
+}
+
+:global .hideOverlay {
+  display: none;
+}
+
+:global .hideContent {
+  display: none;
+}
+
+:global .modalPopUpSPinCar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255 255 255);
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+:global .onScreenFilter{
+    position: fixed;
+    top: 246px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: opacity .23s ease-in;
+    transition: opacity .23s ease-in;
+}
+:global .ReactModal__Overlay--after-open.onScreenFilter{
+    opacity: 1;
+}
+:global .ReactModal__Overlay--before-close.onScreenFilter{
+    opacity: 0;
+}
+
+/* AU Listing ad cards modal styles */
+:global .auListingAdCardModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(70, 81, 102, 1);
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+:global .auListingAdCardModal > div {
+    width: 100%;
+}
+
+:global .opaqueBackgroundModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0,0,0,.7); */
+    background: rgba(70, 81, 102, 1);
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+:global .juspayModal {
+    z-index: 9999999;
+}

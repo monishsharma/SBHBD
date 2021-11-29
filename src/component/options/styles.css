@@ -1,0 +1,35 @@
+.listText{
+    font-size: 18px;
+    padding: 10px 10px;
+    min-height: 48px;
+    min-width: 60px;
+    background: #ffffff;
+    border: 1px solid #DDE5EB;
+    box-sizing: border-box;
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 16px;
+    color: #465166;
+    font-weight: 500;
+    cursor: pointer;
+}
+.listText:hover {
+    border-radius: 5px;
+    background-color: rgba(234, 239, 243, 0.5);
+}
+.listText:active, .listText.active, .active:hover {
+    background: linear-gradient(225deg, rgba(246, 155, 0, 0.1) 0%, rgba(237, 106, 0, 0.1) 100%);
+    border: 1px solid #F8931F;
+    box-sizing: border-box;
+    border-radius: 5px
+}
+.subText{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(70, 81, 102, 0.8);
+    display: block;
+    text-align: center;
+}
