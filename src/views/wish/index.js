@@ -5,6 +5,7 @@ import Video from '../../mobile/video';
 import AboutHer from './about-her';
 import Cutental from './cutental';
 import HBD from './HBD';
+import Last from './last';
 import Section2 from './section2';
 import Thankyou from './thankyou';
 
@@ -25,6 +26,7 @@ const Wish = () => {
             isMobile() ? <Spotify /> : <Cutental />
           }
           <Thankyou />
+          <Last />
 
         </React.Fragment>
       }

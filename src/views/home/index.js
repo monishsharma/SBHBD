@@ -18,6 +18,9 @@ const Home = () => {
             .doc("userCount")
             .update({count: res.value})
         })
+        .catch((e) => {
+            console.log(e)
+        })
     }, [])
 
 

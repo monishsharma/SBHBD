@@ -1,32 +1,10 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import "./styles.css";
 import "react-h5-audio-player/lib/styles.css";
 import version1 from "../../images/smelly cat.aac";
 import version2 from "../../images/Record (online-voice-recorder.com).mp3"
 
 function Thankyou() {
-
-    const [isPlaying, setPlaying] = useState(false);
-    const [currentSong, setCurrentSong] = useState(null);
-  
-    const audio = useRef(null);
-
-    const togglePlay = (e) => {
-        const song = e.target.id;
-        if (currentSong === song) {
-          isPlaying ? audio.current.pause() : audio.current.play();
-          setPlaying(!isPlaying);
-        } else {
-          if (audio.current) {
-            audio.current.pause();
-          }
-    
-          setCurrentSong(song);
-          setPlaying(true);
-          audio.current = new Audio(song);
-          audio.current.play();
-        }
-      };
 
   return (
     <div className="thankyou">

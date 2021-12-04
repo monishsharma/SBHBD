@@ -11,7 +11,7 @@ export const USER_CONTENT = [
     {
         title : "Let's Talk",
         size: "100px",
-        content: "Zyda nahi, thoda sa, because mai kyu apna memories collection share karun 🤫",
+        content: "Zyda nahi, thoda sa, because mai kyu apna memories collection share karun 🤫. <br/><br/><br/><br/> PS - These left side pictures are scrollable",
         gradient: "linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb",
         img: Bumble
     },
@@ -52,7 +52,7 @@ export const USER_CONTENT = [
     },
     {
         title : "This too",
-        content: "Actually the whole video was nice. <br/> I really hope we could meet up someday before your marriage 😂 ",
+        content: "Actually the whole video was nice. <br/> I really hope we could meet up someday before your marriage 😂 <br />  I JUST WANT YOU KNOW THAT I'M ATTACHED TO YOU ABB I DON'T KNOW IN WHAT WAYS NEITHER ASK ME BUT YOU ARE IMPORTANT TO ME, YOU ARE LIKE A CHAPTER IN MY LIFE WHICH I NEVER WANT TO CLOSE. <br /> I'M DRUNK, THAT'S WHY I CAN WRITE THIS OTHERWISE MAI BHI AAPKI TARAH RETICENT BAN GAYA HUN YAH ACT KRTA HUN PATA NI :p. ",
         size: "50px", 
         gradient: "linear-gradient(to bottom, #ffd194, #70e1f5)",
         img: her2
