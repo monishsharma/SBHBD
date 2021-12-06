@@ -8,6 +8,8 @@ function HBD({
 }) {
 
     const container = useRef(null);
+    const banner = useRef(null);
+    const bannerDiv = useRef(null);
     const [bgColoe, setbgColoe] = useState("");
     const [countDown, setcountDown] = useState(10);
 
@@ -45,18 +47,18 @@ function HBD({
     }, []);
 
    
-
     return (
 
         <React.Fragment>
             {showMain && <main>
-                <div className="nhd-container landing" ref={container}>
+                <div className="nhd-container landing" >
                     <div className="inner-container">
                         <div className="hero-container ">
                             <h2 style={{color: "white"}}>Happiest Birthday <br /> Saumya</h2>
                             <p className="ps text-center" style={{color: "white"}}>PS - I hope I could add Taylor Swift 22 song (but you're not 22, maybe next year ??? ) 🤣🙈</p>
                         </div>
                     </div>
+
                 </div>
             </main>}
             <div className="about-container  intro">
